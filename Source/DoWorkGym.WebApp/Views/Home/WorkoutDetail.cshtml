@@ -1,0 +1,83 @@
+﻿@model DoWorkGym.WebApp.ViewModels.WorkoutViewModels.TrainingExerciseView
+@{
+    ViewBag.Title = "Workout Detail";
+}
+
+<div>
+    <h1>Workout Detail</h1>
+</div>
+<div><a href="/home/workout" class="btn btn-primary btn-sm" role="button">Back to workout</a></div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Add <strong>@Model.Exercise</strong> for <strong>@Model.Training</strong></h3>
+    </div>
+</div>
+
+<!-- xs (phones), sm (tablets), md (desktops), and lg (larger desktops). -->
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-3  col-md-2">
+            <label for="dp2">Date</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="dp2" value="@DateTime.Now.ToString("yyyy-MM-dd")" data-bind="value: workout.workoutDate">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-2 col-md-1">
+            <label for="set">Set</label>
+            <input type="tel" class="form-control" id="set" placeholder="Set" data-bind="value: workout.set">
+        </div>
+        <div class="col-xs-3 col-sm-2 col-md-1">
+            <label for="reps">Reps</label>
+            <input type="tel" class="form-control" id="reps" placeholder="Reps" data-bind="value: workout.reps">
+        </div>
+        <div class="col-xs-3 col-sm-2 col-md-1">
+            <label for="weight">Weight</label>
+            <input type="tel" class="form-control" id="weight" placeholder="Weight" data-bind="value: workout.weight">
+        </div>
+        <div class="col-xs-3 col-sm-2 col-md-2">
+            <label for="unit">Unit</label>
+            <select class="form-control" id="unit" data-bind="value: workout.unit, options: workout.units"></select>
+            @*<input type="text" class="form-control" id="unit" placeholder="Unit" data-bind="value: workout.unit">*@
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-9 col-sm-6">
+            <label for="note">Note</label>
+            <input type="text" class="form-control" id="note" placeholder="Note" data-bind="value: workout.note">
+        </div>
+        <div class="col-xs-3 col-sm-12">
+            <label for="addWorkout" class="visible-xs">&nbsp;</label>
+            <button type="button" class="btn btn-primary" id="addWorkout">Add</button>
+        </div>
+    </div>
+
+    <input type="hidden" id="trainingid" value="@ViewBag.TrainingId" />
+    <input type="hidden" id="exerciseid" value="@ViewBag.ExerciseId" />
+    <input type="hidden" id="today" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+</form>
+
+<div id="workouts">
+    <div data-bind="foreach: workouts">
+        <h3 data-bind="text: Date"></h3>
+        <div data-bind="foreach: DateRows">
+            <ul class="list-inline">
+                <li>#<span data-bind="text: Set"></span></li>
+                <li>
+                    <abbr title="Number of repetitions with given weight (reps x weight)">Reps:</abbr> <span data-bind="text: Reps"></span> &#64;
+                    <span data-bind="text: Weight"></span>
+                    <span data-bind="text: Unit"></span> 
+                    <i data-bind="text: '(' + Time() + ')'"></i>
+                </li>
+                <li><em data-bind="text: Note"></em></li>
+                <li><a href="#" data-bind="attr: { 'data-id': Id }" class="delete-link">remove</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/workoutdetail")
+}

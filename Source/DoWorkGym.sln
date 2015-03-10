@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWorkGym.WebApp", "DoWorkGym.WebApp\DoWorkGym.WebApp.csproj", "{345DAE14-6075-4DD7-AC12-69BC0F5D3910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWorkGym.Infrastructure", "DoWorkGym.Infrastructure\DoWorkGym.Infrastructure.csproj", "{FE9907E0-74B4-4E5D-BA54-C16A9A891D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWorkGym.Model", "DoWorkGym.Model\DoWorkGym.Model.csproj", "{E9F50052-7D02-4C98-A61B-11734538B91E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWorkGym.Service", "DoWorkGym.Service\DoWorkGym.Service.csproj", "{9A6A6F2B-D7A5-4DB7-84E8-9B4CA9A159BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWorkGym.Util", "DoWorkGym.Util\DoWorkGym.Util.csproj", "{63D6D2AE-27C7-4D89-87DC-E62B25327E7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{68B7E801-D809-41D6-8D49-63B9B1DC7BB1}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionItems\SharedAssemblyInfo.cs = SolutionItems\SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{032F92AD-7033-44C0-9DED-4BE4DBA7DE85}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{345DAE14-6075-4DD7-AC12-69BC0F5D3910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345DAE14-6075-4DD7-AC12-69BC0F5D3910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345DAE14-6075-4DD7-AC12-69BC0F5D3910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345DAE14-6075-4DD7-AC12-69BC0F5D3910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9907E0-74B4-4E5D-BA54-C16A9A891D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9907E0-74B4-4E5D-BA54-C16A9A891D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9907E0-74B4-4E5D-BA54-C16A9A891D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9907E0-74B4-4E5D-BA54-C16A9A891D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F50052-7D02-4C98-A61B-11734538B91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F50052-7D02-4C98-A61B-11734538B91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F50052-7D02-4C98-A61B-11734538B91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F50052-7D02-4C98-A61B-11734538B91E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6A6F2B-D7A5-4DB7-84E8-9B4CA9A159BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6A6F2B-D7A5-4DB7-84E8-9B4CA9A159BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6A6F2B-D7A5-4DB7-84E8-9B4CA9A159BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6A6F2B-D7A5-4DB7-84E8-9B4CA9A159BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D6D2AE-27C7-4D89-87DC-E62B25327E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D6D2AE-27C7-4D89-87DC-E62B25327E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D6D2AE-27C7-4D89-87DC-E62B25327E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D6D2AE-27C7-4D89-87DC-E62B25327E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

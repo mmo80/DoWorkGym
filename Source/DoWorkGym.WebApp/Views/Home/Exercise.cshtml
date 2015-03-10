@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Exercise";
+}
+
+<div>
+    <h1>Exercise</h1>
+</div>
+<div>
+    <div class="form-group">
+        <select id="trainings" class="form-control" data-bind="options: trainings, optionsText: 'Name', optionsValue: 'Id', optionsCaption: 'Pick a training...'"></select>
+    </div>
+    <div class="form-group">
+        <label for="exercise">Exercise</label>
+        <input type="text" class="form-control" id="exercise" placeholder="Enter exercise" />
+    </div>
+    <div class="form-group">
+        <button id="addexercisebtn" type="button" class="btn btn-primary btn-block">Add</button>
+    </div>
+</div>
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                @*<th>Id</th>*@
+                <th>#</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: exercises">
+            <tr>
+                <td data-bind="text: Name"></td>
+                @*<td data-bind="text: Id"></td>*@
+                <td><a href="#" data-bind="attr: { 'data-id': Id }" class="delete-link"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+@section scripts {
+    @Scripts.Render("~/bundles/exercise")
+}

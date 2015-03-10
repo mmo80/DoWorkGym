@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Sign Up";
+}
+
+<h1>Sign Up</h1>
+
+<form id="registerForm">
+    <div class="row">
+        <div class="col-lg-4">
+            <label for="email">E-mail</label>
+            <input type="text" class="form-control" id="email" placeholder="E-mail" data-bind="value: register.email">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" data-bind="value: register.password">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-primary btn-block" id="register-btn" style="margin-top:25px;">Register</button>
+        </div>
+    </div>
+</form>
+
+@section scripts {
+    
+}

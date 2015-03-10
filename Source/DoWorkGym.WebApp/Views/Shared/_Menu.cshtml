@@ -1,0 +1,80 @@
+﻿@using DoWorkGym.Service
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Training App", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        @if (AccountService.IsAuthorized())
+        {
+            string userEmail = AccountService.AuthorizedUserEmail();
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/home/training">Add Training</a></li>
+                    <li><a href="/home/exercise">Add Exercise</a></li>
+                    <li><a href="/home/workout">Do Work!</a></li>
+                    <li><a href="/home/history">History</a></li>
+                    <li><a href="#" id="logout-call">Logout</a></li>
+                    <li><p class="navbar-text"><small>Signed in as <abbr title="Your e-mail! Retard! ;)">@userEmail</abbr></small></p></li>
+                </ul>
+            </div>
+        }
+    </div>
+</nav>
+
+
+
+@*<nav>
+    @if (AccountService.IsAuthorized())
+    {
+        <div class="list-group" id="sidenav">
+            <a href="/home/training" class="list-group-item">
+                <h4 class="list-group-item-heading">Add Training</h4>
+                <p class="list-group-item-text">Add a training type</p>
+            </a>
+            <a href="/home/exercise" class="list-group-item">
+                <h4 class="list-group-item-heading">Add Exercise</h4>
+                <p class="list-group-item-text">Add a exercise to a given training</p>
+            </a>
+            <a href="/home/workout" class="list-group-item">
+                <h4 class="list-group-item-heading">Do Work!</h4>
+                <p class="list-group-item-text">Start your workout!</p>
+            </a>
+            <a href="/home/history" class="list-group-item">
+                <h4 class="list-group-item-heading">History</h4>
+                <p class="list-group-item-text">Go back in history and discover your past progress/workouts</p>
+            </a>
+            <a href="#" class="list-group-item" id="logout-call">
+                <h4 class="list-group-item-heading">Logout</h4>
+            </a>
+        </div>
+    }
+</nav>*@
+
+
+@*<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="collapse navbar-collapse visible-xs">
+            @Html.ActionLink("Training App", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @if (AccountService.IsAuthorized())
+            {
+                <button type="button" id="my-button" class="btn btn-primary navbar-btn navbar-left">Menu</button>
+                string userEmail = AccountService.AuthorizedUserEmail();
+                <p class="navbar-text navbar-right hidden-xs">Signed in as <abbr title="Your e-mail! Retard! ;)">@userEmail</abbr></p>
+            }
+        </div>
+    </div>
+</nav>*@
+
+
+
+
+
+
+
