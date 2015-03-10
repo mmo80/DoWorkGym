@@ -243,7 +243,7 @@ dowork = function () {
         }
     };
 
-}(); // the parens here cause the anonymous function to execute and return
+}();
 
 /*
 

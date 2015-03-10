@@ -118,8 +118,6 @@ dowork.views.workoutdetail = function () {
         addWorkoutDetailViewModel.workout.exerciseId($('#exerciseid').val());
         addWorkoutDetailViewModel.workout.workoutDate($('#today').val());
 
-        //$('#dp2').datepicker();
-
         $('#addWorkout').on('click', addWorkout);
         $('#workouts').on('click', '.delete-link', deleteWorkout);
 

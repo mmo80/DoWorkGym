@@ -35,7 +35,6 @@ dowork.views.exercise = function () {
             Id: state.trainingId
         };
 
-        // getexercisebytraining
         dowork.call(
             'GET',
             prefixApiPath + '/getexercisebytraining',
@@ -98,7 +97,6 @@ dowork.views.exercise = function () {
             Id: id
         };
 
-        // DELETE api/exercise/deleteexercise
         dowork.call(
             'DELETE',
             prefixApiPath + '/deleteexercise',
@@ -124,7 +122,7 @@ dowork.views.exercise = function () {
             initialize();
         }
     };
-}(); // the parens here cause the anonymous function to execute and return
+}();
 
 
 $(function () {

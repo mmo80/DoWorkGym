@@ -10,21 +10,18 @@ dowork.views.history = function () {
     var prefixApiPath = '/api/history';
     var calendar;
 
-    var historicalOnSuccess = function (data) {
-        dowork.log(data);
-        ko.mapping.fromJS(data, historyViewModel.historyList);
+    //var historicalOnSuccess = function (data) {
+    //    dowork.log(data);
+    //    ko.mapping.fromJS(data, historyViewModel.historyList);
+    //};
 
-        
-    };
-
-    var historical = function () {
-        dowork.call(
-            'GET',
-            prefixApiPath + '/gethistory',
-            null,
-            historicalOnSuccess);
-
-    };
+    //var historical = function () {
+    //    dowork.call(
+    //        'GET',
+    //        prefixApiPath + '/gethistory',
+    //        null,
+    //        historicalOnSuccess);
+    //};
 
 
     var loadCalendarOnSuccess = function (data) {
@@ -34,7 +31,6 @@ dowork.views.history = function () {
             {
                 tmpl_path: "/Scripts/plugins/calendar/tmpls/",
                 language: 'sv-SE',
-                //events_source: prefixApiPath + '/GetHistoryCalendar'
                 events_source: data.Result,
                 onAfterViewLoad: function (view) {
                     $('#date-month-name').text(this.getTitle());
@@ -77,7 +73,6 @@ dowork.views.history = function () {
         // ApplyBindings
         ko.applyBindings(historyViewModel);
 
-        //historical();
         loadCalendar();
     };
 
@@ -87,7 +82,7 @@ dowork.views.history = function () {
             initialize();
         }
     };
-}(); // the parens here cause the anonymous function to execute and return
+}();
 
 
 $(function () {

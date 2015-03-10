@@ -40,7 +40,6 @@ dowork.views.workout = function () {
             TrainingId: state.trainingId
         };
 
-        // getexercisebytraining
         dowork.call(
             'GET',
             prefixApiPath + '/getexercisebytraining',
@@ -73,7 +72,7 @@ dowork.views.workout = function () {
             initialize();
         }
     };
-}(); // the parens here cause the anonymous function to execute and return
+}();
 
 
 $(function () {

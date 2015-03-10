@@ -96,8 +96,6 @@ dowork.views.account = function () {
                     if ($('#email').length) {
                         accountViewModel.user.email(jsonObj.em);
                         accountViewModel.user.rememberMe(true);
-                        //$('#email').val(jsonObj.em);
-                        //$('#rememberme').prop('checked', true);
                     }
                     dowork.log(jsonObj.em);
                 }
@@ -118,7 +116,7 @@ dowork.views.account = function () {
         if ($('#login-btn').length) {
             $('#login-btn').on('click', loginUser);
         }
-        // logout-call
+        
         if ($('#logout-call').length) {
             $('#logout-call').on('click', logoutUser);
         }

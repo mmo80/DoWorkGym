@@ -89,7 +89,7 @@ dowork.views.training = function () {
             initialize();
         }
     };
-}(); // the parens here cause the anonymous function to execute and return
+}();
 
 
 $(function () {
