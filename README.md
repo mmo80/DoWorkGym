@@ -15,55 +15,39 @@ Visit: [dowork.forloop.se](http://dowork.forloop.se/)
 
 # Uses #
 ## Backend: ##
-<ul>
-    <li>[Microsoft ASP.NET MVC](http://www.asp.net/mvc)</li>
-    <li>[Microsoft ASP.NET WebApi](http://www.asp.net/web-api)</li>
-    <li>[MongoDB](http://docs.mongodb.org/ecosystem/drivers/csharp/)</li>
-    <li>[AutoMapper](http://automapper.org/)</li>
-    <li>[NLog](http://nlog-project.org/)</li>
-    <li>[Elmah](https://code.google.com/p/elmah/)</li>
-</ul>
+* [Microsoft ASP.NET MVC](http://www.asp.net/mvc)
+* [Microsoft ASP.NET WebApi](http://www.asp.net/web-api)
+* [MongoDB](http://docs.mongodb.org/ecosystem/drivers/csharp/)
+* [AutoMapper](http://automapper.org/)
+* [NLog](http://nlog-project.org/)
+* [Elmah](https://code.google.com/p/elmah/)
 
 
 ## Frontend: ##
-<ul>
-    <li>
-        [KnockoutJS](http://knockoutjs.com/)
-        <ul>
-            <li>[Knockout Mapping plugin](http://knockoutjs.com/)</li>
-        </ul>
-    </li>
-    <li>[Bootstrap](http://getbootstrap.com)</li>
-    <li>
-        [jQuery](http://jquery.com/)
-        <ul>
-            <li>[jQuery.blockUI](http://malsup.com/jquery/block/)</li>
-            <li>[jQuery.cookie](https://github.com/carhartl/jquery-cookie)</li>
-            <li>[Bootstrap Calendar](https://github.com/Serhioromano/bootstrap-calendar)</li>
-        </ul>
-    </li>
-</ul>
+* [KnockoutJS](http://knockoutjs.com/)
+ * [Knockout Mapping plugin](http://knockoutjs.com/)
+* [Bootstrap](http://getbootstrap.com)
+* [jQuery](http://jquery.com/)
+ * [jQuery.blockUI](http://malsup.com/jquery/block/)
+ * [jQuery.cookie](https://github.com/carhartl/jquery-cookie)
+ * [Bootstrap Calendar](https://github.com/Serhioromano/bootstrap-calendar)
 
 Written in C-Sharp
 
 
 # Todo #
 ## Educational purposes: ##
-<ul>
-    <li>Separe WebApi from WebApp project</li>
-    <li>Add new WebApp project using AngularJS instead of KnockoutJS</li>
-    <li>Test other more scalable databases like Cassandra or FoundationDB</li>
-    <li>Use OWIN authentication</li>
-</ul>
+* Separe WebApi from WebApp project
+* Add new WebApp project using AngularJS instead of KnockoutJS
+* Test other more scalable databases like Cassandra or FoundationDB
+* Use OWIN authentication
 
 
 ## Functionall: ##
-<ul>
-    <li>Make app offline friendly</li>
-    <li>Add to and from datespan search under History</li>
-    <li>Able to add short description for every Exercise</li>
-    <li>...</li>
-</ul>
+* Make app offline friendly
+* Add to and from datespan search under History
+* Able to add short description for every Exercise
+* ...
 
 
 ## Contact ##
