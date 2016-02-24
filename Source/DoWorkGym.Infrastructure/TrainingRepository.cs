@@ -11,6 +11,7 @@ namespace DoWorkGym.Infrastructure
     {
         public List<Training> GetAll()
         {
+            // Testing editing via GitHub
             return new List<Training>(base.FindAll());
         }
 
